@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنسيق الأقسام بواسطة CSS و Bootstrap مع حركة للصور والنصوص</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .image-container {
+            text-align: center;
+            position: relative; /* لإضافة حركة للصور */
+            overflow: hidden; /* لتقليل الفراغات الزائدة */
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out; /* حركة التحويل */
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1); /* زيادة حجم الصورة عند تمرير الماوس */
+        }
+
+        .row {
+            margin: 0;
+            padding: 30px;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="images/endingbrowsing.gif" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    "في Code AH لتقنية المعلومات، نقدم حلولًا برمجية مبتكرة ومتطورة تلبي احتياجات عملائنا بكفاءة واحترافية. كشركة متخصصة في تقديم خدمات تطوير البرمجيات وإدارة المشاريع، نسعى جاهدين لتحقيق تطلعاتكم وأهدافكم التقنية بأعلى مستويات الجودة والكفاءة."
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="images/test.gif" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    "تطمح شركة Code AH في تقديم خدمات متكاملة لتطوير المواقع والتطبيقات والتسويق، وتسعى لتحقيق التميز في الشرق الأوسط. نحن نعمل بجد لإرضاء عملائنا وجعلهم الأكثر تميزًا في سوق المنافسة."
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="images/contract.gif" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1 style="text-align: center;">هل أنت عميل جديد..؟</h1>
+                <p style="text-align: center;">يمكنك بدء رحلتك في نجاح مشروعك</p>
+                <div style="text-align: center;">
+                    <a class="btn btn-bb btn-lg m-1" href="https://docs.google.com/forms/d/e/1FAIpQLSfg-jpKdSOY1CSChJUY-OjgrK1TnhVObXynh6-cJ442X7kEQQ/viewform" style="background-color: #0A284E; color:  #fff;">البدأ الآن</a>
+                    <a class="btn btn-bb btn-lg m-1" href="https://wa.me/201021700756" style="background-color: #0A284E; color: #fff;">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
